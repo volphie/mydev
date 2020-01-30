@@ -3,9 +3,9 @@
 docker pull mysql:5.7
 
 -- Docker에서 Mysql 실행
-docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=12jojeong04 --name docker-mysql mysql:5.7
+docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=*** --name docker-mysql mysql:5.7
 -- Mysql Option과 함께 실행(서버 character set 설정)
-docker run -d -p 3406:3306 -e MYSQL_ROOT_PASSWORD=12jojeong04 --name docker-mysql-utf8 mysql:5.7 --character-set-server=utf8 --collation-server=utf8_unicode_ci
+docker run -d -p 3406:3306 -e MYSQL_ROOT_PASSWORD=*** --name docker-mysql-utf8 mysql:5.7 --character-set-server=utf8 --collation-server=utf8_unicode_ci
 
 -- Docker에서 Mysql Container의 Shell 접속
 docker exec -i -t docker-mysql bash
